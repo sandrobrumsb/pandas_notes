@@ -10,7 +10,7 @@ Uma biblioteca poderosa para análise, limpeza e manipulação de dados.
 
 - Armazena e manipula dados de forma eficiente
 - Possibilita análise, limpeza, exploração e manipulação de dados
-- O nome "Pandas" refere-se tanto a "**P**anel **D**ata" quanto a "Dados em Painel"
+- O nome "Pandas" refere-se tanto a "**P**anel **D**ata" ou "Dados em Painel"
 
 ---
 
