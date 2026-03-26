@@ -119,16 +119,35 @@ myvar = pd.Series(a)
 
 ## 📝 Arquivos do Projeto
 
-| Arquivo                | Descrição                 |
-| ---------------------- | ------------------------- |
-| `pandas_series.py`     | Estudo de Series          |
-| `pandas_dataframes.py` | Estudo de DataFrames      |
-| `pandas_csv.py`        | Leitura de arquivos CSV   |
-| `pandas_json.py`       | Leitura de arquivos JSON  |
-| `pandas_analyzing.py`  | Análise de dados          |
-| `data.csv`             | Arquivo de exemplo (CSV)  |
-| `data.json`            | Arquivo de exemplo (JSON) |
+### Scripts Python
+
+| Arquivo                                             | Descrição                                                          |
+| --------------------------------------------------- | ------------------------------------------------------------------ |
+| `pandas_series.py`                                  | Estudo de Series - Estruturas unidimensionais                      |
+| `pandas_dataframes.py`                              | Estudo de DataFrames - Estruturas bidimensionais                   |
+| `dataframes.py`                                     | Exemplo de criação e manipulação de DataFrames com dados de países |
+| `pandas_csv.py`                                     | Leitura e manipulação de arquivos CSV                              |
+| `pandas_json.py`                                    | Leitura e manipulação de arquivos JSON                             |
+| `pandas_analyzing.py`                               | Análise e exploração de dados com Pandas                           |
+| `criando_colunas.py`                                | Criação e manipulação de colunas em DataFrames                     |
+| `modificando_dataframes.py`                         | Técnicas para modificar estrutura e conteúdo de DataFrames         |
+| `operacoes.py`                                      | Realizando operações matemáticas e lógicas em DataFrames           |
+| `pandas_Indexacao_e_selecao_condicional.py`         | Indexação avançada e seleção condicional de dados                  |
+| `Selecao_condicional_e_modificacao_DataFrames.py`   | Seleção condicional e modificação de valores em DataFrames         |
+| `Introducao_limpeza_de_dados.py`                    | Introdução à limpeza de dados - tratamento de valores nulos        |
+| `Leitura_e_representacao_grafica_dados_externos.py` | Leitura de dados externos (CSV) e representação gráfica            |
+| `graficos_pandas.py`                                | Criação de gráficos e visualizações com Pandas e Matplotlib        |
+| `informacoes_estatisticas.py`                       | Análise estatística e informações descritivas de dados             |
+
+### Arquivos de Dados
+
+| Arquivo                     | Descrição                                      |
+| --------------------------- | ---------------------------------------------- |
+| `data.csv`                  | Arquivo CSV de exemplo com dados simples       |
+| `data.json`                 | Arquivo JSON de exemplo com dados estruturados |
+| `data/btc-market-price.csv` | Dados históricos do preço do Bitcoin           |
+| `data/eth-price.csv`        | Dados históricos do preço do Ethereum          |
 
 ---
 
-**Última atualização:** Fevereiro 2026
+**Última atualização:** Março 2026
