@@ -117,37 +117,75 @@ myvar = pd.Series(a)
 
 ---
 
-## 📝 Arquivos do Projeto
+## 📝 Estrutura do Projeto
 
-### Scripts Python
+O projeto está organizado conforme as principais etapas de uma análise de dados:
 
-| Arquivo                                             | Descrição                                                          |
-| --------------------------------------------------- | ------------------------------------------------------------------ |
-| `pandas_series.py`                                  | Estudo de Series - Estruturas unidimensionais                      |
-| `pandas_dataframes.py`                              | Estudo de DataFrames - Estruturas bidimensionais                   |
-| `dataframes.py`                                     | Exemplo de criação e manipulação de DataFrames com dados de países |
-| `pandas_csv.py`                                     | Leitura e manipulação de arquivos CSV                              |
-| `pandas_json.py`                                    | Leitura e manipulação de arquivos JSON                             |
-| `pandas_analyzing.py`                               | Análise e exploração de dados com Pandas                           |
-| `criando_colunas.py`                                | Criação e manipulação de colunas em DataFrames                     |
-| `modificando_dataframes.py`                         | Técnicas para modificar estrutura e conteúdo de DataFrames         |
-| `operacoes.py`                                      | Realizando operações matemáticas e lógicas em DataFrames           |
-| `pandas_Indexacao_e_selecao_condicional.py`         | Indexação avançada e seleção condicional de dados                  |
-| `Selecao_condicional_e_modificacao_DataFrames.py`   | Seleção condicional e modificação de valores em DataFrames         |
-| `Introducao_limpeza_de_dados.py`                    | Introdução à limpeza de dados - tratamento de valores nulos        |
-| `Leitura_e_representacao_grafica_dados_externos.py` | Leitura de dados externos (CSV) e representação gráfica            |
-| `graficos_pandas.py`                                | Criação de gráficos e visualizações com Pandas e Matplotlib        |
-| `informacoes_estatisticas.py`                       | Análise estatística e informações descritivas de dados             |
+```
+├── 1_coleta/           # Coleta e leitura de dados externos (CSV, JSON)
+│   ├── Leitura_e_representacao_grafica_dados_externos.py
+│   ├── pandas_csv.py
+│   ├── pandas_json.py
+│   └── data/
+│       ├── btc-market-price.csv
+│       ├── data.csv
+│       └── data.json
+├── 2_limpeza/          # Limpeza e preparação dos dados
+│   ├── Introducao_limpeza_de_dados.py
+│   ├── Limpeza_dados_com_DataFrames.py
+│   └── Selecao_condicional_e_modificacao_DataFrames.py
+├── 3_exploracao/       # Exploração e análise inicial dos dados
+│   ├── pandas_analyzing.py
+│   ├── pandas_Indexacao_e_selecao_condicional.py
+│   └── data/
+│       ├── data.csv
+│       └── data.json
+├── 4_analise_estatistica/ # Análise estatística dos dados
+│   └── informacoes_estatisticas.py
+├── 5_visualizacao/     # Visualização de dados
+│   ├── graficos_pandas.py
+│   └── data/
+│       └── btc-market-price.csv
+├── fundamentos/        # Fundamentos do pandas e manipulação básica
+│   ├── criando_colunas.py
+│   ├── dataframes.py
+│   ├── modificando_dataframes.py
+│   ├── operacoes.py
+│   ├── pandas_dataframes.py
+│   ├── pandas_series.py
+│   └── data/
+│       └── data.csv
+├── data/               # Arquivos de dados gerais
+│   ├── btc-market-price.csv
+│   ├── data_exploracao.csv
+│   ├── data_exploracao.json
+│   ├── data.csv
+│   └── data.json
+└── readme.md           # Este arquivo
+```
 
-### Arquivos de Dados
+### Exemplos de scripts por etapa
 
-| Arquivo                     | Descrição                                      |
-| --------------------------- | ---------------------------------------------- |
-| `data.csv`                  | Arquivo CSV de exemplo com dados simples       |
-| `data.json`                 | Arquivo JSON de exemplo com dados estruturados |
-| `data/btc-market-price.csv` | Dados históricos do preço do Bitcoin           |
-| `data/eth-price.csv`        | Dados históricos do preço do Ethereum          |
+| Etapa               | Script(s) principais                                           |
+| ------------------- | -------------------------------------------------------------- |
+| Coleta              | 1_coleta/pandas_csv.py, 1_coleta/pandas_json.py                |
+| Limpeza             | 2_limpeza/Limpeza_dados_com_DataFrames.py                      |
+| Exploração          | 3_exploracao/pandas_analyzing.py                               |
+| Análise Estatística | 4_analise_estatistica/informacoes_estatisticas.py              |
+| Visualização        | 5_visualizacao/graficos_pandas.py                              |
+| Fundamentos         | fundamentos/pandas_series.py, fundamentos/pandas_dataframes.py |
+
+### Principais arquivos de dados
+
+| Arquivo                                  | Descrição                           |
+| ---------------------------------------- | ----------------------------------- |
+| data/data.csv                            | Dados de exemplo em CSV             |
+| data/data.json                           | Dados de exemplo em JSON            |
+| data/btc-market-price.csv                | Histórico de preço do Bitcoin       |
+| 1_coleta/data/data.csv                   | Dados para exemplos de coleta       |
+| 3_exploracao/data/data.csv               | Dados para exemplos de exploração   |
+| 5_visualizacao/data/btc-market-price.csv | Dados para exemplos de visualização |
 
 ---
 
-**Última atualização:** Março 2026
+**Última atualização:** Maio 2026
