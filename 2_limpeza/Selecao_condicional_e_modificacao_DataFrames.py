@@ -33,37 +33,38 @@ df.index = [
 ]
 
 
-# 1. selecionando população suoperior a 70.000:
+print("1. selecionando população suoperior a 70.000:")
 
 print(df["Population"] > 70)  # Sera exibido apenas valor boeleano..
 
-# Usando a função loc() com dataframe - sera exibido os nomes dos países:
+print("Usando a função loc() com dataframe - sera exibido os nomes dos países:")
 print(df.loc[df["Population"] > 70])
 
-# Mostra Population e GDP dos países cuja população é maior que 70.
+print("Mostra Population e GDP dos países cuja população é maior que 70.")
 print(df.loc[df["Population"] > 70, ["Population", "GDP"]])
 
-# 2. dropping stuff:
-# No pandas, dropping stuff significa remover dados do DataFrame:
+print("2. dropping stuff:")
+print("No pandas, dropping stuff significa remover dados do DataFrame:")
 
-# Usando o método drop():
+print("Usando o método drop():")
 print(df.drop("Canada"))  # removendo canada.
 print(df.drop(["Canada", "Japan"]))  # removendo canada e japao.
 
-# O parâmetro axis no pandas serve para dizer em qual direção você quer aplicar a operação: linhas ou colunas.
+print(
+    "O parâmetro axis no pandas serve para dizer em qual direção você quer aplicar a operação: linhas ou colunas."
+)
 
-#  axis=0 - remove linhas
-# Remove a linha "Canada":
-print(df.drop("Canada", axis=0))  #
+print("axis=0 - remove linhas")
+print("Remove a linha Canada:")
+print(df.drop("Canada", axis=0))
 
-# axis=1 - remove colunas
-# Remove a coluna Population.
+print("axis=1 - remove colunas")
+print("Remove a coluna Population.")
 print(df.drop("Population", axis=1))
 
-# Remove as colunas Population e HDI:
+print("Remove as colunas Population e HDI:")
 print(df.drop(["Population", "HDI"], axis="columns"))
 
-# Forma moderna recomendada para remover:
+print("Forma moderna recomendada para remover:")
 df.drop(columns=["Population", "HDI"])
 df.drop(index=["Canada", "Japan"])
-

@@ -33,20 +33,21 @@ df.index = [
 ]
 
 
-# Operaçoes:
-# Seleciona apenas duas colunas do DataFrame:
+print("Operaçoes:")
+print("Seleciona apenas duas colunas do DataFrame:")
 print(df[["Population", "GDP"]])
 
-# Divide todos os valores dessas duas colunas por 100.
-print(df[["Population", "GDP"]]/100)
+print("Divide todos os valores dessas duas colunas por 100.")
+print(df[["Population", "GDP"]] / 100)
 
 
-# Criando uma serie onde o valor de GDP = -1000000 e HDI = -0.3  
-crisis = pd.Series([-1_000_000, -0.3], index = ["GDP","HDI"])
+print("Criando uma serie onde o valor de GDP = -1000000 e HDI = -0.3")
+crisis = pd.Series([-1_000_000, -0.3], index=["GDP", "HDI"])
 print(crisis)
 
-# olha para os nomes das colunas e combina com os nomes da Series.
-# O que acontece é uma subtração implícita, porque os valores da Series são negativos:
-print(df[["GDP","HDI"]]) # Isso mostra apenas essas duas colunas do seu DataFrame.
-print(df[["GDP","HDI"]] + crisis)
-
+print("Olha para os nomes das colunas e combina com os nomes da Series.")
+print(
+    "O que acontece é uma subtração implícita, porque os valores da Series são negativos:"
+)
+print(df[["GDP", "HDI"]])  # Isso mostra apenas essas duas colunas do seu DataFrame.
+print(df[["GDP", "HDI"]] + crisis)

@@ -33,11 +33,10 @@ df.index = [
     "Brasil",
 ]
 
-# Pega o PIB de cada país e divide pelo número de pessoas daquele país:
+print("Pega o PIB de cada país e divide pelo número de pessoas daquele país:")
 print(df["GDP"] / df["Population"])
 
 
-# Criando coluna a partir de outras colunas com uma operação matemática:
+print("Criando coluna a partir de outras colunas com uma operação matemática:")
 df["GDP Per Capita"] = df["GDP"] / df["Population"]
 print(df)
-

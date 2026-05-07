@@ -34,46 +34,47 @@ df.index = [
 ]
 
 
-# Informações estatísticas (statistical infos):
-# Mostra várias estatísticas descritivas do DataFrame (count, mean, std, min, 25%, 50%, 75%, max):
+print("Informações estatísticas (statistical infos):")
+print(
+    "Mostra várias estatísticas descritivas do DataFrame (count, mean, std, min, 25%, 50%, 75%, max):"
+)
 print(df.describe())
 
-# Calcula a média de cada coluna numérica
+print("Calcula a média de cada coluna numérica")
 print(df.mean())
 
-# Calcula a média apenas da coluna GDP
+print("Calcula a média apenas da coluna GDP")
 print(df["GDP"].mean())
 
-# Calcula a mediana de cada coluna numérica
+print("Calcula a mediana de cada coluna numérica")
 print(df.median())
 
-# Calcula a mediana apenas da coluna Population
+print("Calcula a mediana apenas da coluna Population")
 print(df["Population"].median())
 
-# Soma todos os valores de cada coluna numérica
+print("Soma todos os valores de cada coluna numérica")
 print(df.sum())
 
-# Soma todos os valores da coluna GDP
+print("Soma todos os valores da coluna GDP")
 print(df["GDP"].sum())
 
-# Retorna o menor valor de cada coluna
+print("Retorna o menor valor de cada coluna")
 print(df.min())
 
-# Retorna o maior valor de cada coluna
+print("Retorna o maior valor de cada coluna")
 print(df.max())
 
-# Calcula o desvio padrão das colunas numéricas
+print("Calcula o desvio padrão das colunas numéricas")
 print(df.std())
 
-# Calcula a variância das colunas numéricas
+print("Calcula a variância das colunas numéricas")
 print(df.var())
 
-# Conta quantos valores não nulos existem em cada coluna
+print("Conta quantos valores não nulos existem em cada coluna")
 print(df.count())
 
-# Mostra os valores únicos de uma coluna
+print("Mostra os valores únicos de uma coluna")
 print(df["Continent"].unique())
 
-# Conta quantas vezes cada valor aparece na coluna
+print("Conta quantas vezes cada valor aparece na coluna")
 print(df["Continent"].value_counts())
-
