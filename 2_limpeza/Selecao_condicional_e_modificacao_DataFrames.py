@@ -34,7 +34,6 @@ df.index = [
 
 
 print("1. selecionando população suoperior a 70.000:")
-
 print(df["Population"] > 70)  # Sera exibido apenas valor boeleano..
 
 print("Usando a função loc() com dataframe - sera exibido os nomes dos países:")

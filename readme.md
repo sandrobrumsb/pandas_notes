@@ -133,7 +133,9 @@ O projeto está organizado conforme as principais etapas de uma análise de dado
 ├── 2_limpeza/          # Limpeza e preparação dos dados
 │   ├── Introducao_limpeza_de_dados.py
 │   ├── Limpeza_dados_com_DataFrames.py
-│   └── Selecao_condicional_e_modificacao_DataFrames.py
+│   ├── Selecao_condicional_e_modificacao_DataFrames.py
+│   ├── Limpeza_de_dados_duplicados.py
+│   └── Limpeza_de_dados_duplicados_exemplo_2.py
 ├── 3_exploracao/       # Exploração e análise inicial dos dados
 │   ├── pandas_analyzing.py
 │   ├── pandas_Indexacao_e_selecao_condicional.py
@@ -144,6 +146,7 @@ O projeto está organizado conforme as principais etapas de uma análise de dado
 │   └── informacoes_estatisticas.py
 ├── 5_visualizacao/     # Visualização de dados
 │   ├── graficos_pandas.py
+│   ├── Limpeza_e_visualizacao_de_dados.py
 │   └── data/
 │       └── btc-market-price.csv
 ├── fundamentos/        # Fundamentos do pandas e manipulação básica
@@ -166,14 +169,14 @@ O projeto está organizado conforme as principais etapas de uma análise de dado
 
 ### Exemplos de scripts por etapa
 
-| Etapa               | Script(s) principais                                           |
-| ------------------- | -------------------------------------------------------------- |
-| Coleta              | 1_coleta/pandas_csv.py, 1_coleta/pandas_json.py                |
-| Limpeza             | 2_limpeza/Limpeza_dados_com_DataFrames.py                      |
-| Exploração          | 3_exploracao/pandas_analyzing.py                               |
-| Análise Estatística | 4_analise_estatistica/informacoes_estatisticas.py              |
-| Visualização        | 5_visualizacao/graficos_pandas.py                              |
-| Fundamentos         | fundamentos/pandas_series.py, fundamentos/pandas_dataframes.py |
+| Etapa               | Script(s) principais                                                                                                                    |
+| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Coleta              | 1_coleta/pandas_csv.py, 1_coleta/pandas_json.py                                                                                         |
+| Limpeza             | 2_limpeza/Limpeza_dados_com_DataFrames.py, 2_limpeza/Limpeza_de_dados_duplicados.py, 2_limpeza/Limpeza_de_dados_duplicados_exemplo_2.py |
+| Exploração          | 3_exploracao/pandas_analyzing.py                                                                                                        |
+| Análise Estatística | 4_analise_estatistica/informacoes_estatisticas.py                                                                                       |
+| Visualização        | 5_visualizacao/graficos_pandas.py, 5_visualizacao/Limpeza_e_visualizacao_de_dados.py                                                    |
+| Fundamentos         | fundamentos/pandas_series.py, fundamentos/pandas_dataframes.py                                                                          |
 
 ### Principais arquivos de dados
 
@@ -188,4 +191,4 @@ O projeto está organizado conforme as principais etapas de uma análise de dado
 
 ---
 
-**Última atualização:** Maio 2026
+**Última atualização:** Julho 2026
