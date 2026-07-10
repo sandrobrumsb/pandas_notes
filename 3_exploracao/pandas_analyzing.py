@@ -8,7 +8,7 @@ Visualizando os dados:
 # Exemplo - Obtenha uma visão geral rápida imprimindo as 10 primeiras linhas do DataFrame:
 import pandas as pd
 
-df = pd.read_csv("data.csv")
+df = pd.read_csv("./data/data.csv")
 
 print(df.head(10))
 """ 
@@ -34,7 +34,7 @@ Saída:
 # Exemplo - Imprima as últimas 5 linhas do DataFrame:
 import pandas as pd
 
-df = pd.read_csv("data.csv")
+df = pd.read_csv("./data/data.csv")
 print(df.tail())
 """ 
 Saída:
@@ -53,7 +53,7 @@ Saída:
 # Exemplo - Imprimir informações sobre os dados:
 import pandas as pd
 
-df = pd.read_csv("data.csv")
+df = pd.read_csv("./data/data.csv")
 print(df.info())
 
 """

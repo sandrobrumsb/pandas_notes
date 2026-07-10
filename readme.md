@@ -108,12 +108,24 @@ myvar = pd.Series(a)
 - **CSV** - Texto simples com valores separados por vírgula
 - **JSON** - Formato estruturado legível por máquinas
 
-### 4. Análise de Dados
+### 4. Limpeza e Transformação
+
+- Tratamento de valores ausentes e duplicados
+- Seleção condicional e modificação de colunas
+- Organização e preparação dos dados para análise
+
+### 5. Análise de Dados
 
 - `.head()` - Primeiras linhas (padrão: 5)
 - `.tail()` - Últimas linhas
 - `.info()` - Informações sobre o dataset
-- Limpeza de dados e tratamento de valores nulos
+- Estatísticas descritivas e exploração inicial
+
+### 6. Visualização e Leitura de Dados
+
+- Gráficos com Pandas e Matplotlib
+- Leitura de CSV, JSON, HTML e bancos de dados
+- Integração com diferentes fontes de dados
 
 ---
 
@@ -122,72 +134,65 @@ myvar = pd.Series(a)
 O projeto está organizado conforme as principais etapas de uma análise de dados:
 
 ```
-├── 1_coleta/           # Coleta e leitura de dados externos (CSV, JSON)
+├── 1_coleta/                  # Coleta e leitura de dados externos (CSV, JSON)
 │   ├── Leitura_e_representacao_grafica_dados_externos.py
 │   ├── pandas_csv.py
-│   ├── pandas_json.py
-│   └── data/
-│       ├── btc-market-price.csv
-│       ├── data.csv
-│       └── data.json
-├── 2_limpeza/          # Limpeza e preparação dos dados
+│   └── pandas_json.py
+├── 2_limpeza/                 # Limpeza e preparação dos dados
 │   ├── Introducao_limpeza_de_dados.py
 │   ├── Limpeza_dados_com_DataFrames.py
-│   ├── Selecao_condicional_e_modificacao_DataFrames.py
 │   ├── Limpeza_de_dados_duplicados.py
-│   └── Limpeza_de_dados_duplicados_exemplo_2.py
-├── 3_exploracao/       # Exploração e análise inicial dos dados
+│   ├── Limpeza_de_dados_duplicados_exemplo_2.py
+│   └── Selecao_condicional_e_modificacao_DataFrames.py
+├── 3_exploracao/              # Exploração e análise inicial dos dados
 │   ├── pandas_analyzing.py
-│   ├── pandas_Indexacao_e_selecao_condicional.py
-│   └── data/
-│       ├── data.csv
-│       └── data.json
-├── 4_analise_estatistica/ # Análise estatística dos dados
+│   └── pandas_Indexacao_e_selecao_condicional.py
+├── 4_analise_estatistica/     # Análise estatística dos dados
 │   └── informacoes_estatisticas.py
-├── 5_visualizacao/     # Visualização de dados
+├── 5_visualizacao/           # Visualização de dados
 │   ├── graficos_pandas.py
-│   ├── Limpeza_e_visualizacao_de_dados.py
-│   └── data/
-│       └── btc-market-price.csv
-├── fundamentos/        # Fundamentos do pandas e manipulação básica
+│   └── Limpeza_e_visualizacao_de_dados.py
+├── 6_leitura_de_dados/       # Leitura de dados de diferentes fontes
+│   ├── Introducao_leitura_dados.py
+│   ├── Leitura_de_dados_de_bancos_de_dados.py
+│   └── Lendo_tabelas_HTML.py
+├── fundamentos/               # Fundamentos do pandas e manipulação básica
 │   ├── criando_colunas.py
 │   ├── dataframes.py
 │   ├── modificando_dataframes.py
 │   ├── operacoes.py
 │   ├── pandas_dataframes.py
-│   ├── pandas_series.py
-│   └── data/
-│       └── data.csv
-├── data/               # Arquivos de dados gerais
+│   └── pandas_series.py
+├── data/                      # Arquivos de dados usados nos exemplos
 │   ├── btc-market-price.csv
 │   ├── data_exploracao.csv
 │   ├── data_exploracao.json
 │   ├── data.csv
 │   └── data.json
-└── readme.md           # Este arquivo
+└── readme.md                  # Este arquivo
 ```
 
 ### Exemplos de scripts por etapa
 
-| Etapa               | Script(s) principais                                                                                                                    |
-| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| Coleta              | 1_coleta/pandas_csv.py, 1_coleta/pandas_json.py                                                                                         |
-| Limpeza             | 2_limpeza/Limpeza_dados_com_DataFrames.py, 2_limpeza/Limpeza_de_dados_duplicados.py, 2_limpeza/Limpeza_de_dados_duplicados_exemplo_2.py |
-| Exploração          | 3_exploracao/pandas_analyzing.py                                                                                                        |
-| Análise Estatística | 4_analise_estatistica/informacoes_estatisticas.py                                                                                       |
-| Visualização        | 5_visualizacao/graficos_pandas.py, 5_visualizacao/Limpeza_e_visualizacao_de_dados.py                                                    |
-| Fundamentos         | fundamentos/pandas_series.py, fundamentos/pandas_dataframes.py                                                                          |
+| Etapa               | Script(s) principais                                                                                                                                |
+| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Coleta              | 1_coleta/pandas_csv.py, 1_coleta/pandas_json.py, 1_coleta/Leitura_e_representacao_grafica_dados_externos.py                                         |
+| Limpeza             | 2_limpeza/Limpeza_dados_com_DataFrames.py, 2_limpeza/Limpeza_de_dados_duplicados.py, 2_limpeza/Limpeza_de_dados_duplicados_exemplo_2.py             |
+| Exploração          | 3_exploracao/pandas_analyzing.py, 3_exploracao/pandas_Indexacao_e_selecao_condicional.py                                                            |
+| Análise Estatística | 4_analise_estatistica/informacoes_estatisticas.py                                                                                                   |
+| Visualização        | 5_visualizacao/graficos_pandas.py, 5_visualizacao/Limpeza_e_visualizacao_de_dados.py                                                                |
+| Leitura de Dados    | 6_leitura_de_dados/Introducao_leitura_dados.py, 6_leitura_de_dados/Leitura_de_dados_de_bancos_de_dados.py, 6_leitura_de_dados/Lendo_tabelas_HTML.py |
+| Fundamentos         | fundamentos/pandas_series.py, fundamentos/pandas_dataframes.py                                                                                      |
 
 ### Principais arquivos de dados
 
-| Arquivo                                  | Descrição                           |
-| ---------------------------------------- | ----------------------------------- |
-| data/data.csv                            | Dados de exemplo em CSV             |
-| data/data.json                           | Dados de exemplo em JSON            |
-| data/btc-market-price.csv                | Histórico de preço do Bitcoin       |
-| 1_coleta/data/data.csv                   | Dados para exemplos de coleta       |
-| 3_exploracao/data/data.csv               | Dados para exemplos de exploração   |
-| 5_visualizacao/data/btc-market-price.csv | Dados para exemplos de visualização |
+| Arquivo                   | Descrição                              |
+| ------------------------- | -------------------------------------- |
+| data/data.csv             | Dados de exemplo em CSV                |
+| data/data.json            | Dados de exemplo em JSON               |
+| data/data_exploracao.csv  | Dados usados em exemplos de exploração |
+| data/data_exploracao.json | Dados usados em exemplos de exploração |
+| data/btc-market-price.csv | Histórico de preço do Bitcoin          |
 
 ---
 
